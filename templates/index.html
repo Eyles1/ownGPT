@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot-Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>ownGPT</h1>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <!-- chat messages -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Nachricht eingeben" onenter="sendMessage()">
+      <button id="send-button" onclick="sendMessage()">Senden</button>
+    </div>
+    <div class="settings-menu">
+      <h2>Einstellungen</h2>
+      <label for="response-length">Antwortlänge:</label>
+      <input type="number" id="response-length" min="1" max="100" value="50">
+      <label for="response-model">Model:</label>
+      <select id="response-model">
+        <option value="davinci">Davinci</option>
+        <option value="curie">Curie</option>
+      </select>
+      <button id="apply-settings" onclick="applySettings()">Anwenden</button>
+    </div>
+  </div>
+  <img src="./assets/settings.png" id="settings_icon">
+
+  <script src="script.js"></script>
+</body>
+</html>
