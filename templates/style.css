@@ -7,7 +7,6 @@ body {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #1a2733;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -16,15 +15,16 @@ body {
 .chat-header {
     text-align: center;
     margin-bottom: 20px;
+    color: #f7f7f7;
 }
   
 .chat-messages {
     height: 300px;
     overflow-y: scroll;
-    border: 1px solid #ccc;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: #0e1317;
 }
   
 .chat-input {
@@ -43,7 +43,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    background-color: #4caf50;
+    background-color: #5d8b98;
     color: #fff;
     cursor: pointer;
     margin-left: 10px;
@@ -85,7 +85,7 @@ body {
 }
     
 .user-message {
-    background-color: #4caf50;
+    background-color: #5d8b98;
     color: #fff;
     border-radius: 5px;
     padding: 5px;
@@ -94,13 +94,14 @@ body {
 }
   
 .bot-message {
-    background-color: #f1f1f1;
+    background-color: #40565c;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 10px;
     text-align: right;
     margin-left: auto;
     max-width: 40%;
+    color: #fff;
 }
   
 #settings_icon {

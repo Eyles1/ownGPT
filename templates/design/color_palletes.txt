@@ -1,0 +1,10 @@
+Darkmode + blue:
+
+bg - #0e1317
+chatcontainer - #1a2733
+headings - #f7f7f7
+other text - #d7d9db
+chatbubbles user - #5d8b98
+buttons - #5d8b98
+chatbubbles owngpt - #40565c
+chat window bg - #0e1317
