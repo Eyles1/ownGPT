@@ -1,1 +1,2 @@
-gpt4all
+gpt4all==1.0.3
+flask==2.3.2
