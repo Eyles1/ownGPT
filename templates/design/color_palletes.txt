@@ -1,4 +1,4 @@
-Darkmode + blue:
+Darkmode + blue (cool):
 
 bg - #0e1317
 chatcontainer - #1a2733
@@ -8,3 +8,14 @@ chatbubbles user - #5d8b98
 buttons - #5d8b98
 chatbubbles owngpt - #40565c
 chat window bg - #0e1317
+
+Darkmode + orange (warm):
+
+bg - #17140e
+chatcontainer - #33291a
+headings - #f7f7f7
+other text - #dbd9d7
+chatbubbles user - #98825d
+buttons - #98825d
+chatbubbles owngpt - #5c5240
+chat window bg - #17140e
