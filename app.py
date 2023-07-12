@@ -9,6 +9,14 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+class Send_File:
+    def __init__(self, filepath: str):
+        self.filepath = filepath
+        self.__name__ = self.filepath
+    
+    def __call__(self):
+        return send_file(self.filepath)
+
 def add_assets(directory):
     for file in os.scandir(directory):
         if file.name == "index.html":
@@ -17,7 +25,7 @@ def add_assets(directory):
             add_assets(file.path)
         elif file.is_file():
             site_path = os.path.join("/assets" if "assets" in file.path else "/", file.name)
-            app.route(site_path)(lambda: send_file(file.path))
+            app.route(site_path)(Send_File(file.path))
 
 add_assets(os.path.join(os.getcwd(), "templates/"))
 
