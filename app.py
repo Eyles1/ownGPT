@@ -14,9 +14,9 @@ def add_assets(directory):
         if file.name == "index.html":
             continue
         elif file.is_dir():
-            add_assets(file.path())
+            add_assets(file.path)
         elif file.is_file():
-            site_path = os.path.join("/assets" if "assets" in file.path() else "/", file.name)
+            site_path = os.path.join("/assets" if "assets" in file.path else "/", file.name)
             app.route(site_path)(lambda: send_file(file.path))
 
 add_assets(os.path.join(os.getcwd(), "templates/"))
