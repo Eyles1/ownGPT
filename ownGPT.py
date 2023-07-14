@@ -19,7 +19,7 @@ class ownGPT:
 
             for token in self.model.generate(prompt, streaming = True, **settings):
                 if start_time == 0:
-                    start_time = time()
+                    start_time = time() - 0.001
                 for letter in token:
                     chars += 1
                     yield letter
