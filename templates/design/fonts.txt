@@ -1,1 +1,7 @@
+Standard font: consolas (-> the visual studio code font)
+
+Other options:
+
+- Times New Roman
+- Arial
 
